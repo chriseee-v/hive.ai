@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: command_centre
+      POSTGRES_USER: command_centre
+      POSTGRES_PASSWORD: command_centre_dev_only
+    ports:
+      - "5432:5432"
+    volumes:
+      - command_centre_pg:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - command_centre_redis:/data
+
+volumes:
+  command_centre_pg:
+  command_centre_redis:
+

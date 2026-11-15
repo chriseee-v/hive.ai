@@ -1,6 +1,6 @@
 # AI Command Centre — Milestone 1
 
-Local-first command centre for a Windows laptop (16 GB RAM) with a Next.js PWA dashboard, FastAPI task service, WebSocket updates, agent lifecycle controls, approval gates, and optional local inference.
+Local-first command centre for a Windows laptop (16 GB RAM) with a TanStack Start/Vite command deck, FastAPI task service, WebSocket updates, agent lifecycle controls, approval gates, and optional local inference.
 
 ## What works now
 
@@ -9,7 +9,7 @@ Local-first command centre for a Windows laptop (16 GB RAM) with a Next.js PWA d
 - Local `demo` agent that completes tasks without an external model.
 - Guarded Codex worker adapter. It can call the already-authenticated local `codex exec` only when explicitly enabled; it never reads or exposes credentials.
 - Local Ollama orchestrator and worker using `qwen3.5:4b`, disabled until explicitly enabled.
-- Next.js PWA dashboard for agent status, task submission, approvals, and live task events.
+- Hive Orbit command deck frontend with Swarm, Hardware, Containers, Logs, Map, and Chat views. The Chat view is connected directly to the local FastAPI task API and WebSocket stream; it does not require Supabase or cloud authentication.
 - Docker Compose definitions for PostgreSQL and Redis, with the backend designed to remain usable in in-memory mode.
 - Push-to-talk browser voice input using the Web Speech API when the browser supports it.
 - Tests for API behavior and approval boundaries.

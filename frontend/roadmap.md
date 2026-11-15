@@ -1,0 +1,15 @@
+# Roadmap
+- [x] Agent pause/resume/stop with confirm
+- [x] CPU/GPU history chart
+- [x] Container log view with health
+- [x] Guarded container restart on cards with live health
+- [x] Per-agent activity history (pause/resume/stop, timestamps, outcomes)
+- [x] Today landing page from image-5
+- [x] Container restart history with timestamps + outcome
+- [x] Persist agent events across sessions + filters by agent/outcome
+- [x] Clear nav Today / Deck / Map preserving state
+- [x] Failed container restart alert (name + time)
+- [x] Command Centre chat in deck (threads in Cloud, profile, local agent link)
+- [x] Chat as deck tab (same page)
+- [x] Restyle chat inner layout to match image-8
+- [x] Hide the white scrollbar under Today's section cards
